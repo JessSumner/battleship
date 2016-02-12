@@ -18,6 +18,14 @@ class BoardTest < Minitest::Test
     assert_equal 10, @board.rows
   end
 
+  def test_board_has_100_cells
+    assert_equal 100, @board.total_cells
+  end
+
+  def test_a_target_cell_can_be_chosen
+    assert_equal :target, @board.choose_cell
+  end
+
   private
 
   def empty_board

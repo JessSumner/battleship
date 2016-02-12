@@ -14,4 +14,12 @@ class Board
   def rows
     10
   end
+
+  def total_cells
+    100
+  end
+
+  def choose_cell
+    :target
+  end
 end
